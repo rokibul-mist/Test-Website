@@ -21,7 +21,7 @@
         color: #ffffff;
         font-size: 18px;
         text-align: justify;
-        width: 50%;
+        padding-right: 20px;
     }
     .sci-btn{
         display: flex;
@@ -34,10 +34,12 @@
             transition: .5s ease-in-out;
             text-decoration: solid;
             font-size: 18px;
+            font-weight: bold;
 
             &:hover{
-                background-color: red;
+                background-color: #aaff00;
                 border: 1px solid #ffffff;
+                color: black;
             }
         }
         .sci{
@@ -52,27 +54,34 @@
                 transition:.5s ease-in-out;
                 
                 &:hover{
-                    background-color: red;
+                    background-color: #aaff00;
+                    color: black;
                     border: 1px solid #ffffff;
                 }
             }
         }
     }
     .img_container{
-        width: 50%;
-        border-radius: 50%;
+        padding: 10px;
+        border: 1px solid #ffffff;
+        background: transparent;
+        transition: .5s ease-in-out;
         .img_box{
-
+            overflow: hidden;
             img{
                 width: 100%;
             }
+        }
+
+        &:hover{
+            border: 1px solid #aaff00;
         }
     }
 }
 
 .page2{
     padding: 20px;
-    background-image: url();
+    background-color: #ffffff;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -81,3 +90,38 @@
 }
 
 
+@media (max-width: 768px) {
+    .page1 {
+        flex-direction: column;
+        padding: 0 15px;
+        h1 {
+            font-size: 24px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 18px;
+            text-align: center;
+        }
+        p {
+            padding-right: 0;
+            font-size: 14px;
+        }
+        .sci-btn {
+            flex-direction: column;
+            align-items: flex-start;
+            .btn {
+                margin-bottom: 10px;
+            }
+
+        }
+        .img_container {
+            padding: 0;
+        }
+        .img_box {
+            margin-bottom: 20px;
+        }
+    }
+    .page2 {
+        padding: 0 15px;
+    }
+}
