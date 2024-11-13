@@ -15,6 +15,31 @@ body {
     margin: 0 200px;
     background-color: #f3f3f3;
     animation: faded  .5s ease-in-out;
+
+    .page_title{
+        backdrop-filter: blur(20px);
+        background-color: rgba(0, 0, 0, .8);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        height: 150px;
+        display: flex;
+        flex-direction:column-reverse;
+
+        h1{
+            color: rgb(228, 228, 228);
+            font-size: 30px;
+            text-transform: uppercase;
+            text-align: center;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            letter-spacing: 20px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .page{
+        margin: 0;
+    }
+
 }
 
 footer{
@@ -24,6 +49,7 @@ footer{
     bottom: 0;
     width: 100%;
 }
+
 
 @keyframes showMenu {
     0% {

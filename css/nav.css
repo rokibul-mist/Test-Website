@@ -2,7 +2,8 @@
 .navbar {
     display: flex;
     justify-content:space-between;
-    background-color: #131313;
+    backdrop-filter: blur(20px);
+    background-color: rgba(34, 34, 34, 0.5);
     color: #fff;
     position: fixed;
     width: 100%;
@@ -86,11 +87,12 @@
         display: none;
         flex-direction: column;
         justify-content:flex-start;
-        background-color: #161616;
+        backdrop-filter: blur(20px);
+        background-color: rgba(0, 0, 0, 0.8);
         position: absolute;
         top: 50px;
         right: 0px;
-        width: 40%;
+        width: 30%;
     }
 
     .nav-links li {
@@ -103,6 +105,7 @@
             background-color: rgb(35, 35, 35);
             color: #aaff00;
             border-radius: 0;
+            
         }
     }
 
@@ -110,6 +113,7 @@
         background-color: rgb(35, 35, 35);
         color: #aaff00;
         border-radius: 0;
+        
     }
     
 
